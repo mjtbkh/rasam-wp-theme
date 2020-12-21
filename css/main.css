@@ -161,12 +161,14 @@ footer #widget:nth-child(2) {
 #blog-full {
   position: relative;
   padding: 8px 5px;
+  margin-top: 0%;
 }
 #blog-full img {
   position: absolute;
   left: 0;
   right: auto;
   width: auto;
+  z-index: 1000;
 }
 #blog-full {
   background: none !important;
@@ -247,8 +249,8 @@ svg.fa-clipboard {
   text-decoration: none;
   color: rgba(235, 235, 235, 0.75);
 }
-img.attachment-medium.size-medium.wp-post-image {
-  right: 0;
+img.wp-post-image {
+  left: 0;
   top: 0;
   position: absolute;
 }

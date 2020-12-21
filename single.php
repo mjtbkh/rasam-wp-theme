@@ -1,42 +1,42 @@
 <?php get_header( ) ?>
 
-      <div class="container p-3">
+      <div class="container-fluid p-2">
         <div class="row">
 
-          <main class="row col-12">
+          <main class="row">
           <?php if(have_posts(  )):
                   while(have_posts(  )):
                     the_post(  );
           ?>
 
-            <article id="blog-full">
+            <article id="blog-full" class="container">
               
-              <div class="row">
-                <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12">
+              <div class="row" style="height: 300px">
+                <div class="col">
                   <?php the_title( '<h1 class="post-title">', '</h1>' ) ?>
-                <p>
-                  <span><i id="post-info" class="fa fa-pen"></i> <?php the_author( ); ?></span>
-                  <span><i id="post-info" class="fa fa-calendar"></i> <?php echo get_the_date( 'Y/m/d' ); ?></span>
-                  <span><i id="post-info" class="fa fa-comments"></i> <?php echo get_comment_count( get_the_ID(  ) )['approved']; ?></span>
-                  <span><i id="post-info" class="fa fa-eye"></i> <?php echo('12') ?></span>
-                </p>
+                  <p>
+                    <span><i id="post-info" class="fa fa-pen"></i> <?php the_author( ); ?></span>
+                    <span><i id="post-info" class="fa fa-calendar"></i> <?php echo get_the_date( 'Y/m/d' ); ?></span>
+                    <span><i id="post-info" class="fa fa-comments"></i> <?php echo get_comment_count( get_the_ID(  ) )['approved']; ?></span>
+                    <span><i id="post-info" class="fa fa-eye"></i> <?php echo('12') ?></span>
+                  </p>
+                  <p>
+                  <?php the_tags( 'برچسب ها: ' ); ?>
+                  </p>
                 </div>
-                <div class="col-xl-3 col-lg-3-col-sm12 col-xs-12">
+                <div class="col" style="position: relative">
                   <?php if(has_post_thumbnail( )):
                         the_post_thumbnail( 'medium' );
                       endif; 
                 ?>
                 </div>
-                
-                
               </div>
+
               <hr>
-              <div class="row col-12">
+
+              <div class="row">
                 <?php the_content( ); ?>
               </div>
-              
-              
-
             </article>
             <?php endwhile; ?>
             <?php endif; ?>

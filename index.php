@@ -1,6 +1,6 @@
 <?php get_header( ) ?>
 
-      <div class="container p-3">
+      <div class="container-fluid p-2">
         <div class="row">
 
           <aside class="col-xl-3 col-lg-2 col-md-3 col-sm-10 p-4 offset-1">
@@ -41,12 +41,15 @@
                           <div><i id="post-info" class="fas fa-clock"></i> <?php echo get_the_date('Y/m/d'); ?></div>
                       </div>
                       <div class="card-text">
-                        <hr><a href="blog.html" class="btn btn-success">ادامه مطلب</a>
+                        <hr>
+                        <a href="<?php echo get_permalink( ); ?>" class="btn btn-success">ادامه مطلب</a>
                       </div>
                       
                     </div>
                   </article>
                   <?php endwhile; ?>
+              <?php else: ?>
+                <h3>هیچ مطلبی یافت نشد!</h3>    
               <?php endif; ?>
           </main>
         </div>
