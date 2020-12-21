@@ -1,0 +1,280 @@
+body,
+#wrapper {
+  background: #fff;
+  direction: rtl;
+}
+#wrapper,
+#avatar {
+  margin: 0 auto;
+}
+#logo {
+  text-align: center;
+}
+header {
+  padding: 30px 0;
+}
+header ul {
+  margin-top: 20px;
+}
+header ul li {
+  display: inline-block;
+  padding: 8px 10px;
+  margin: 3px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+header ul li:hover {
+  background: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 8px;
+  transition: all ease-in-out 150ms;
+  cursor: pointer;
+}
+aside {
+  background: rgb(233, 233, 233);
+  float: right;
+  border-radius: 12px;
+  z-index: 1100;
+}
+aside div {
+  text-align: center;
+}
+#avatar img {
+  border-radius: 50%;
+}
+#avatar img:hover {
+  animation: shake 0.3s 10;
+}
+aside ul {
+  display: flex;
+  list-style: none;
+  margin: 30% auto;
+  justify-content: space-evenly;
+}
+aside ul svg {
+  margin: 0 5px;
+}
+aside ul svg:hover {
+  animation: pulse 600ms infinite;
+}
+aside #biography {
+  font-size: 14px;
+  text-align: justify;
+}
+#facebook {
+  transition: all ease-in-out 500ms;
+}
+#facebook:hover {
+  color: blue;
+  transition: all ease-in-out 700ms;
+}
+#twitter {
+  transition: all ease-in-out 500ms;
+}
+#twitter:hover {
+  color: steelblue;
+  transition: all ease-in-out 700ms;
+}
+#linkedin {
+  transition: all ease-in-out 500ms;
+}
+#linkedin:hover {
+  color: blue;
+  transition: all ease-in-out 700ms;
+}
+#instagram {
+  transition: all ease-in-out 500ms;
+}
+#instagram:hover {
+  color: orangered;
+  transition: all ease-in-out 700ms;
+}
+main {
+  float: left;
+  padding: 0 36px;
+}
+article {
+  background: #eee !important;
+  box-shadow: 4px 4px 32px #bebebe, -4px -4px 32px #ececec;
+  z-index: 1000;
+  margin: 12px 6px;
+  width: 31% !important;
+  padding: 8px;
+  flex: 1;
+}
+article .card-text div {
+  font-size: 12px;
+  display: block;
+}
+article h5 {
+  color: rgb(255, 255, 255);
+}
+article p {
+  font-size: 14px;
+  vertical-align: baseline;
+}
+main article p {
+  color: #666;
+}
+article #post-info-wrapper {
+  color: rgb(235, 235, 235);
+  background: rgba(100, 100, 100, 0.85);
+  width: 120%;
+  padding: 2px 30px;
+  border-radius: 10px;
+  float: left;
+  margin: 20px 6px;
+  font-size: 12px;
+}
+article a.btn {
+  float: left;
+}
+.card-title a {
+    color: #eee !important;
+    text-decoration: none !important;
+}
+footer {
+  display: flex;
+}
+footer p {
+  font-size: 15px;
+}
+footer #widget {
+  max-width: 30%;
+  margin: 70px 5px;
+  padding: 25px;
+  list-style: none;
+}
+footer #widget:nth-child(1),
+footer #widget:nth-child(2) {
+  border-left: 1px solid #bebebe;
+}
+#copyright {
+  margin: 40px 0;
+}
+
+/* single post */
+#blog-full .card-text span {
+  margin-left: 15px;
+}
+#blog-full {
+  position: relative;
+  padding: 8px 5px;
+}
+#blog-full img {
+  position: absolute;
+  left: 0;
+  right: auto;
+  width: auto;
+}
+#blog-full {
+  background: none !important;
+  box-shadow: none;
+}
+
+/* 404 page */
+.page-404 h3 {
+  font-size: 92px;
+  color: #222;
+}
+.page-404 .row div {
+  align-self: center;
+  color: #444;
+}
+.page-404 #searchbox {
+  position: relative;
+}
+.page-404 #searchfield {
+  padding: 5px 12px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+.page-404 #searchbox button {
+  width: 8%;
+  position: absolute;
+  left: 0;
+  background: transparent;
+  height: 100%;
+  border: none;
+  border-right: 1px solid #999;
+}
+/* bootstrap reset */
+hr {
+  opacity: 0.1;
+}
+input[type="checkbox"] {
+  float: right !important;
+  margin-left: auto !important;
+}
+.card {
+  border: none !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+}
+.card-body {
+  position: relative;
+}
+aside.col-lg-2 {
+  width: 21% !important;
+}
+aside.offset-1 {
+  margin-left: 4.3333333333%;
+}
+@media (min-width: 1200px) {
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 21%;
+  }
+}
+/* fontawesome reset */
+svg.fa-clipboard {
+  margin: 0 2px;
+}
+/* wp reset */
+.post-categories {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.post-categories li {
+  display: inline-block;
+  padding: 2px 3px;
+  text-decoration: none;
+}
+.post-categories li a {
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.75);
+}
+img.attachment-medium.size-medium.wp-post-image {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+/* animations */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+}
