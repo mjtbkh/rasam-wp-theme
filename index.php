@@ -3,7 +3,7 @@
       <div class="container-fluid p-2">
         <div class="row">
 
-          <aside class="col-xl-3 col-lg-2 col-md-3 col-sm-10 p-4 offset-1">
+          <aside class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-4 offset-1">
             <div>
               <div id="avatar"><?php echo get_avatar( $current_user->ID, 98 ); ?></div>
               <h3><?php echo get_author_name( $current_user->ID ); ?></h3>
@@ -12,15 +12,15 @@
               </p>
             </div>
             <ul>
-              <li id="facebook" class="fab fa-facebook fa-2x"></li>
-              <li id="twitter" class="fab fa-twitter fa-2x"></li>
-              <li id="instagram" class="fab fa-instagram fa-2x"></li>
-              <li id="linkedin" class="fab fa-linkedin fa-2x"></li>
+              <li id="facebook" class="fab fa-facebook"></li>
+              <li id="twitter" class="fab fa-twitter"></li>
+              <li id="instagram" class="fab fa-instagram"></li>
+              <li id="linkedin" class="fab fa-linkedin"></li>
             </ul>
           </aside>
-          
-          <main class="row col-xl-9 col-lg-9 col-md-9 col-sm-10">
-            <?php 
+
+          <main class="col-xl-9 col-lg-9 col-md-9 col-sm-12 row">
+            <?php
               if( have_posts() ):
                 while(have_posts( )): ?>
 
@@ -42,14 +42,14 @@
                       </div>
                       <div class="card-text">
                         <hr>
-                        <a href="<?php echo get_permalink( ); ?>" class="btn btn-success">ادامه مطلب</a>
+                        <a href="<?php echo get_permalink( ); ?>" class="btn btn-warning">ادامه مطلب</a>
                       </div>
-                      
+
                     </div>
                   </article>
                   <?php endwhile; ?>
               <?php else: ?>
-                <h3>هیچ مطلبی یافت نشد!</h3>    
+                <h3>هیچ مطلبی یافت نشد!</h3>
               <?php endif; ?>
           </main>
         </div>

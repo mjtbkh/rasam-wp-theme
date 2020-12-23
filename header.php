@@ -21,13 +21,14 @@
         <div id="menu-wrapper">
           <div id="burger"></div>
           <div id="menu">
-            <ul>
+            <?php wp_nav_menu( array('theme_location' => 'header-menu')); ?>
+            <!-- <ul>
               <li>خانه</li>
               <li>بلاگ</li>
               <li>نویسندگان</li>
               <li>درباره ما</li>
               <li>تماس با ما</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </header>

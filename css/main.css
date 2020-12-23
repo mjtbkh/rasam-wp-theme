@@ -169,10 +169,54 @@ footer #widget:nth-child(2) {
   right: auto;
   width: auto;
   z-index: 1000;
+  transform: none;
+  border-radius: 2px;
+  box-shadow: 3px 3px 12px #eee
 }
 #blog-full {
   background: none !important;
   box-shadow: none;
+}
+/* comments */
+ol.commentlist{
+  padding: 30px;
+}
+li.comment {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-bottom: 2px solid blue;
+  margin: 25px 0;
+  list-style: none;
+  position: relative;
+}
+li.comment.even {
+    background: aliceblue;
+}
+li.comment.odd {
+    background: #fff;
+}
+div.reply {
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+div.reply a {
+    background: #31d031;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: small;
+    float: left;
+
+}
+.children .comment-body {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+.comment-author img {
+    border-radius: 50%;
 }
 
 /* 404 page */
@@ -201,6 +245,12 @@ footer #widget:nth-child(2) {
   border: none;
   border-right: 1px solid #999;
 }
+
+/* reset */
+img.wp-post-image {
+    transform: translateX(-50%);
+}
+
 /* bootstrap reset */
 hr {
   opacity: 0.1;
@@ -217,22 +267,28 @@ input[type="checkbox"] {
 .card-body {
   position: relative;
 }
-aside.col-lg-2 {
-  width: 21% !important;
-}
 aside.offset-1 {
-  margin-left: 4.3333333333%;
+  margin-left: 1.3333333333%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
+    aside.col-lg-2 {
+    width: 21% !important;
+  }
+
   .col-xl-3 {
     flex: 0 0 auto;
     width: 21%;
   }
 }
+
 /* fontawesome reset */
 svg.fa-clipboard {
   margin: 0 2px;
 }
+aside ul svg {
+  font-size: 1.5em
+}
+
 /* wp reset */
 .post-categories {
   list-style: none;
@@ -250,14 +306,15 @@ svg.fa-clipboard {
   color: rgba(235, 235, 235, 0.75);
 }
 img.wp-post-image {
-  left: 0;
+  left: 50%;
   top: 0;
   position: absolute;
 }
-a {
-    color: #222;
-    text-decoration: none;
+a, #menu a {
+    color: #222 !important;
+    text-decoration: none !important;
 }
+
 /* animations */
 @keyframes pulse {
   0%,
