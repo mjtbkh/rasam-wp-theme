@@ -13,3 +13,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: RasamVira Blog - RTL
 Tags: one-column
 */
+
+@font-face {
+    font-family: Vazir;
+    src: url('webfonts/Vazir-Regular-UI.eot');
+    src: url('webfonts/Vazir-Regular-UI.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/Vazir-Regular-UI.woff2') format('woff2'),
+         url('webfonts/Vazir-Regular-UI.woff') format('woff'),
+         url('webfonts/Vazir-Regular-UI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

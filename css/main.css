@@ -2,6 +2,7 @@ body,
 #wrapper {
   background: #fff;
   direction: rtl;
+  font-family: Vazir;
 }
 #wrapper,
 #avatar {
