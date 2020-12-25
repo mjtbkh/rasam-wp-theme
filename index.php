@@ -5,10 +5,10 @@
 
           <aside class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-4 offset-1">
             <div>
-              <div id="avatar"><?php echo get_avatar( $current_user->ID, 98 ); ?></div>
-              <h3><?php echo get_author_name( $current_user->ID ); ?></h3>
+              <div id="avatar"><?php echo get_avatar( 1, 98 ); ?></div>
+              <h3><?php echo get_author_name( 1 ); ?></h3>
               <p id="biography">
-                <?php echo get_the_author_meta( 'description', $current_user->ID ); ?>
+                <?php echo get_the_author_meta( 'description', 1 ); ?>
               </p>
             </div>
             <ul>
