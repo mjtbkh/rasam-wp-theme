@@ -12,7 +12,7 @@
   </head>
   <body class="container-fluid">
 
-    <div id="wrapper" class="col-10">
+    <div id="wrapper" class="row px-4">
 
       <header class="col-12">
         <div id="logo">

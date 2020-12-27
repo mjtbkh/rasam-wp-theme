@@ -1,9 +1,8 @@
 <?php get_header( ) ?>
 
-      <div class="container-fluid p-2">
-        <div class="row">
+      <div class="row mx-auto">
 
-          <aside class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-4 offset-1">
+          <aside class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto p-4">
             <div>
               <div id="avatar"><?php echo get_avatar( 1, 98 ); ?></div>
               <h3><?php echo get_author_name( 1 ); ?></h3>
@@ -19,7 +18,7 @@
             </ul>
           </aside>
 
-          <main class="col-xl-9 col-lg-9 col-md-9 col-sm-12 row">
+          <main class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
             <?php
               if( have_posts() ):
                 while(have_posts( )): ?>
@@ -41,7 +40,6 @@
                           <div><i id="post-info" class="fas fa-clock"></i> <?php echo get_the_date('Y/m/d'); ?></div>
                       </div>
                       <div class="card-text">
-                        <hr>
                         <a href="<?php echo get_permalink( ); ?>" class="btn btn-warning">ادامه مطلب</a>
                       </div>
 
@@ -52,7 +50,6 @@
                 <h3>هیچ مطلبی یافت نشد!</h3>
               <?php endif; ?>
           </main>
-        </div>
       </div>
 
 <?php get_footer( ) ?>
