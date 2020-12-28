@@ -168,8 +168,12 @@ footer #widget:nth-child(2) {
 }
 #blog-full {
   position: relative;
-  padding: 8px 5px;
+  padding: 10px 20px;
   margin-top: 0%;
+  width: auto !important;
+  background: none !important;
+  box-shadow: none;
+  flex-flow: row wrap;
 }
 #blog-full img {
   position: absolute;
@@ -181,10 +185,16 @@ footer #widget:nth-child(2) {
   border-radius: 2px;
   box-shadow: 3px 3px 12px #eee
 }
-#blog-full {
-  background: none !important;
-  box-shadow: none;
+#blog-full .post-title {
+  margin-bottom: 30px;
 }
+#blog-full span {
+  margin-left: 10px;
+  background: #eee;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
 /* comments */
 ol.commentlist{
   padding: 30px;

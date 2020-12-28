@@ -1,17 +1,15 @@
 <?php get_header( ) ?>
 
-      <div class="container-fluid p-2">
-        <div class="row">
-
-          <main class="row">
+      <div class="row mx-auto">
+          <main>
           <?php if(have_posts(  )):
                   while(have_posts(  )):
                     the_post(  );
           ?>
 
-            <article id="blog-full" class="container">
+            <article class="container" id="blog-full">
               
-              <div class="row" style="height: 300px">
+              <div class="row" style="height: 300px; width: 100%">
                 <div class="col">
                   <?php the_title( '<h1 class="post-title">', '</h1>' ) ?>
                   <p>
@@ -21,10 +19,13 @@
                     <span><i id="post-info" class="fa fa-eye"></i> <?php echo('12') ?></span>
                   </p>
                   <p>
-                  <?php the_tags( 'برچسب ها: ' ); ?>
+                    <span>دسته بندی:</span><?php the_category( '، '); ?>
+                  </p>
+                  <p>
+                    <?php the_tags( '<span>برچسب ها:</span>', '، ' ); ?>
                   </p>
                 </div>
-                <div class="col" style="position: relative">
+                <div class="col" style="position: relative; overflow: hidden">
                   <?php if(has_post_thumbnail( )):
                         the_post_thumbnail( 'medium' );
                       endif; 
@@ -50,7 +51,6 @@
             </div>
             
           </main>
-        </div>
       </div>
 
 <?php get_footer( ) ?>
