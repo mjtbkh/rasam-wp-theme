@@ -325,6 +325,9 @@ div.reply a {
 
 
 /* 404 page */
+.page-404 {
+  justify-content: center;
+}
 .page-404 h3 {
   font-size: 92px;
   color: #222;
