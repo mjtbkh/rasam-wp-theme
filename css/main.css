@@ -14,23 +14,39 @@ body,
 header {
   padding: 30px 0;
 }
-header ul {
-  margin-top: 20px;
+header ul.menu {
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row wrap;
 }
-header ul li {
+header ul.menu li.menu-item.current_page_item {
+  border-top: 2px solid rgb(138, 43, 226);
+}
+header ul.menu li {
   display: inline-block;
+  position: relative;
   padding: 8px 10px;
   margin: 3px 10px;
-  border: 1px solid transparent;
-  border-radius: 8px;
+  transition: all ease-in-out 150ms;
 }
-header ul li:hover {
-  background: white;
-  color: blue;
-  border: 1px solid blue;
-  border-radius: 8px;
+header ul.menu li:hover {
+  color: rgb(138, 43, 226);
   transition: all ease-in-out 150ms;
   cursor: pointer;
+}
+header li.menu-item:hover ul.sub-menu {
+  display: block;
+}
+ul.sub-menu {
+  display: none;
+  position: absolute;
+  background: #eee;
+  border-radius: 2px;
+  z-index: 10000;
+  border: 1px solid rgb(138, 43, 226);
+  right: 0;
+  top: 98%;
+
 }
 aside {
   background: rgb(233, 233, 233);
