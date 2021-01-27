@@ -22,12 +22,13 @@ header ul.menu {
 header ul.menu li.menu-item.current_page_item {
   border-top: 2px solid rgb(138, 43, 226);
 }
-header ul.menu li {
+header ul.menu>li {
   display: inline-block;
   position: relative;
   padding: 8px 10px;
   margin: 3px 10px;
   transition: all ease-in-out 150ms;
+  text-align: center;
 }
 header ul.menu li:hover {
   color: rgb(138, 43, 226);
@@ -37,22 +38,35 @@ header ul.menu li:hover {
 header li.menu-item:hover ul.sub-menu {
   display: block;
 }
+ul.sub-menu li {
+  list-style: none;
+  margin: 10px 0;
+}
 ul.sub-menu {
   display: none;
   position: absolute;
-  background: #eee;
-  border-radius: 2px;
-  z-index: 10000;
-  border: 1px solid rgb(138, 43, 226);
+  background: rgb(13 110 253 / 75%);
+  z-index: 6;
   right: 0;
   top: 98%;
-
+  padding: 0;
+  width: 170px;
+}
+ul.sub-menu li.menu-item-has-children ul.sub-menu {
+  top: 0;
+  display: none;
+  border-bottom: 1px solid;
+  transform: translateX(-50%);
+  right: 50%;
+}
+ul.sub-menu li.menu-item-has-children:hover ul.sub-menu {
+  display: block;
 }
 aside {
   background: rgb(233, 233, 233);
   float: right;
   border-radius: 8px;
-  z-index: 1100;
+  z-index: 2;
   margin-bottom: 20px;
 }
 aside div {
@@ -118,7 +132,7 @@ main {
 article {
   background: #eee !important;
   box-shadow: -1px -1px 32px #dfdfdf;
-  z-index: 1000;
+  z-index: 4;
   width: 30% !important;
   padding: 8px;
   border: 1px solid rgba(0,0,0,.125) !important;
@@ -196,7 +210,7 @@ footer #widget:nth-child(2) {
   left: 0;
   right: auto;
   width: auto;
-  z-index: 1000;
+  z-index: 5;
   transform: none;
   border-radius: 2px;
   box-shadow: 3px 3px 12px #eee
