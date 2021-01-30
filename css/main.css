@@ -218,7 +218,7 @@ footer #widget:nth-child(2) {
   position: relative;
   padding: 10px 20px;
   margin-top: 0%;
-  width: auto !important;
+  width: 100% !important;
   background: none !important;
   box-shadow: none;
   flex-flow: row wrap;
