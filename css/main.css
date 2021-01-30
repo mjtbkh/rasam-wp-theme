@@ -242,6 +242,9 @@ footer #widget:nth-child(2) {
   padding: 6px 15px;
   border-radius: 5px;
 }
+#blog-full .row {
+  width: 100%;
+}
 
 /* comments */
 #respond { 
