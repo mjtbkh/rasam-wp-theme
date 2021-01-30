@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/all.min.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
-
+    <?php wp_head(); ?>
   </head>
   <body class="container-fluid">
-
+  <?php wp_body_open(); ?>
     <div id="wrapper" class="row px-4">
 
       <header class="col-12">
