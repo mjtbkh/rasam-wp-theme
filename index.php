@@ -24,7 +24,7 @@
                 while(have_posts( )): ?>
 
                   <?php the_post(  );  ?>
-                  <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 card">
+                  <article class="col-xl-3 col-lg-3 col-md-3 col-sm-6 card" style="height: max-content">
                     <?php
                       if ( has_post_thumbnail() ) {
                         the_post_thumbnail( 'medium' );

@@ -1,9 +1,10 @@
 <div class="row mx-auto">
     <main>
         <article class="container" id="blog-full">
-            <div class="row" style="height: 300px; width: 100%">
+            <div class="row" style="height: auto; width: 100%; margin-bottom: 20px">
                 <div class="col">
                   <?php the_title( '<h1 class="post-title">', '</h1>' ) ?>
+                  <?php if( !is_page()): ?>
                   <p>
                     <span><i id="post-info" class="fa fa-pen"></i> <?php the_author( ); ?></span>
                     <span><i id="post-info" class="fa fa-calendar"></i> <?php echo get_the_date( 'Y/m/d' ); ?></span>
@@ -16,13 +17,13 @@
                   <p>
                     <?php the_tags( '<span>برچسب ها:</span>', '، ' ); ?>
                   </p>
+                  <?php endif; ?>
                 </div>
-                <div class="col" style="position: relative; overflow: hidden">
-                  <?php if(has_post_thumbnail( )):
-                        the_post_thumbnail( 'medium' );
-                      endif; 
-                ?>
-                </div>
+                  <?php if(has_post_thumbnail( )): ?>
+                  <div class="col" style="position: relative; overflow: hidden; height: 15rem">
+                        <?php the_post_thumbnail( 'medium' ); ?>
+                  </div>
+                  <?php endif; ?>
             </div>
 
             <hr>
