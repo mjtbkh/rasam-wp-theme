@@ -5,7 +5,7 @@
           <aside class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto p-4">
             <div>
               <div id="avatar"><?php echo get_avatar( 1, 98 ); ?></div>
-              <h3><?php echo get_author_name( 1 ); ?></h3>
+              <h3><?php echo get_the_author_meta( 'display_name', 1 ); ?></h3>
               <p id="biography">
                 <?php echo get_the_author_meta( 'description', 1 ); ?>
               </p>

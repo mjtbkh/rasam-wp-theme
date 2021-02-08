@@ -2,7 +2,7 @@
   <?php wp_meta(); ?>
   <div>
     <div id="avatar"><?php echo get_avatar( $current_user->ID, 98 ); ?></div>
-      <h3><?php echo get_author_name( $current_user->ID ); ?></h3>
+      <h3><?php echo get_the_author_meta( 'display_name', $current_user->ID ); ?></h3>
       <p id="biography">
         <?php echo get_the_author_meta( 'description', $current_user->ID ); ?>
       </p>
