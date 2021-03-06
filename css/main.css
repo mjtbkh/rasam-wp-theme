@@ -3,10 +3,11 @@ body,
   background: #fff;
   direction: rtl;
   font-family: Vazir;
-}
-#wrapper,
-#avatar {
   margin: 0 auto;
+}
+#avatar {
+    display: flex;
+    justify-content: center;
 }
 #logo {
   text-align: center;
@@ -170,6 +171,10 @@ article p {
 }
 main article p {
   color: #666;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3px;
 }
 article #post-info-wrapper {
   color: rgb(235, 235, 235);
@@ -219,6 +224,7 @@ footer #widget:nth-child(2) {
   padding: 30px 20px;
   margin-top: 0%;
   width: 100% !important;
+  height: auto;
   background: none !important;
   box-shadow: none;
   flex-flow: row wrap;
@@ -237,10 +243,10 @@ footer #widget:nth-child(2) {
   margin-bottom: 30px;
 }
 #blog-full span {
-  margin-left: 10px;
   background: #eee;
   padding: 6px 15px;
   border-radius: 5px;
+  margin: 0 4px;
 }
 #blog-full .row {
   width: 100%;
